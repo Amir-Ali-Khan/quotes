@@ -19,9 +19,7 @@ btn.addEventListener("click",function(){
         
     }).then((apiquote) =>{
         quote.innerHTML = apiquote[0].quote
-        if( author !== "Unkonwn"){
-            author.innerHTML = "-- "+ apiquote[0].author
-        }
+            author.innerHTML = "-- "+ apiquote[0].author 
         
     }).catch((err) =>{
         console.log(err)
